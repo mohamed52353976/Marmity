@@ -1,25 +1,93 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="UTF-8" />
-    <title>Marmity</title>
-  </head>
-  <body>
-    <h1>Bienvenue à Marmity</h1>
-    <p>Site de recettes.</p>
-  </body>
-</html>
-<!DOCTYPE html>
 <html lang="fr">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Marmity</title>
-  <meta name="description" content="Recettes savoureuses de Marmity, cuisine maison.">
+  <title>Marmity - Accueil</title>
   <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Playfair Display', serif;
+      background-color: #fff;
+    }
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px;
+      border-bottom: 1px solid #eee;
+    }
+    nav a {
+      margin: 0 10px;
+      text-decoration: none;
+      color: black;
+      font-weight: bold;
+    }
+    .hero {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 50px 20px;
+    }
+    .hero-text {
+      max-width: 400px;
+    }
+    .hero-text h1 {
+      font-size: 2em;
+    }
+    .hero-text p {
+      font-style: italic;
+      margin: 10px 0;
+    }
+    .subscribe {
+      display: flex;
+      margin-top: 20px;
+    }
+    .subscribe input {
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 3px 0 0 3px;
+      flex: 1;
+    }
+    .subscribe button {
+      padding: 10px 20px;
+      border: none;
+      background-color: #d63384;
+      color: white;
+      border-radius: 0 3px 3px 0;
+      cursor: pointer;
+    }
+    .hero-image img {
+      width: 200px;
+      transform: rotate(10deg);
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    }
+  </style>
 </head>
 <body>
-  <h1>Bienvenue sur Marmity</h1>
-  <p>Explorez nos recettes maison !</p>
+  <header>
+    <div class="logo">Marmity</div>
+    <nav>
+      <a href="#">Accueil</a>
+      <a href="#">À Propos</a>
+      <a href="#">Plus</a>
+    </nav>
+  </header>
+  <section class="hero">
+    <div class="hero-text">
+      <h1>Bienvenue à Marmity</h1>
+      <p><strong>Explorez, Préparez et Dégustez</strong></p>
+      <div class="subscribe">
+        <input type="email" placeholder="Adresse e-mail" />
+        <button>S'ABONNER</button>
+      </div>
+    </div>
+    <div class="hero-image">
+      <img src="https://cdn.pixabay.com/photo/2016/11/18/15/17/bruschetta-1838585_1280.jpg" alt="Image de nourriture">
+    </div>
+  </section>
 </body>
 </html>
+
